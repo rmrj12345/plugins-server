@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "tsx watch --clear-screen=false src/index.ts | pino-pretty",
-    "build": "rimraf dist && tsup",
+    "build": "node node_modules/rimraf/dist/bin.js dist && tsup"
     "start": "node dist/index.js",
     "postinstall": "npm run build",
     "clean": "rimraf dist coverage",
