@@ -16,7 +16,7 @@ jobs:
         with:
           registry: ghcr.io
           username: "rmrj12345"
-          password: "Guaca2184!"
+          password: "asdfasdf"
 
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ghcr.io/${{ secrets.GH_REPOSITORY }}:latest
